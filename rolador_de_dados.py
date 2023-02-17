@@ -47,7 +47,7 @@ while event != 'Exit':
         continue
 
     if event == 'Vídeo':
-        os.system("start \"\" https://www.youtube.com/@prof_allanIFBA")
+        os.system("start \"\" https://www.youtube.com/watch?v=OZHzVkdRVd4")
         continue
 
     if tipo != '' and quantidade != '':
