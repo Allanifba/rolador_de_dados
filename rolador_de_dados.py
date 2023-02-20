@@ -50,6 +50,7 @@ while event != 'Exit':
         os.system("start \"\" https://www.youtube.com/watch?v=OZHzVkdRVd4")
         continue
 
+
     if tipo != '' and quantidade != '':
         try:
             tipo = int(tipo)
@@ -77,11 +78,14 @@ while event != 'Exit':
             except:
                 sg.popup("Digite um valor inteiro, +1, -1, +2, -2,....")
                 continue
+
         if event == 'Rolar':
+            i = 0
             while i < 10:
                 window[str(f'im{i + 1}')].Update(filename=str(f'img0.png'), visible=True)
                 i = i + 1
             i = 0
+            lista = []
             while i < quantidade:
                 lista.append(random.randint(1, tipo))
                 window[str(f'im{i + 1}')].Update(filename=str(f'img{lista[i]}.png'), visible=True)
@@ -104,5 +108,4 @@ while event != 'Exit':
 
 
 window.close()
-
 
